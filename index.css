@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+li {
+  list-style-type: none;
+}
+
+:root {
+  font-family: 'Inter Tight', sans-serif;
+}
+
+:root {
+  --navbar-height: 5vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: sticky;
+  top: 0px;
+  height: var(--navbar-height);
+
+  padding: 0px 0.5rem;
+}
+
+.navbar>nav>ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.section {
+  min-height: 100vh;
+  min-height: 100svh;
+
+  scroll-margin-top: var(--navbar-height);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.prospect-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  padding: 1rem;
+}
+
+.prospect-card {
+  width: fit-content;
+  background-color: cornflowerblue;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+}
